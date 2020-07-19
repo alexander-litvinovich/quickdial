@@ -1,0 +1,13 @@
+.DialButton {
+    width: 50px;
+    height: 50px;
+}
+
+.DialButton-icon{
+    width: 24px;
+    height: 24px;
+}
+
+.DialButton-label{
+    display: block;
+}
