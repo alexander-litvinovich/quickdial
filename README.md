@@ -1,13 +1,20 @@
-# Preact Chrome Extension Starter
+# Boilerplate for a Chrome extension built with Preact.
 
 Scaffolding for a Chrome extension built with [Preact](https://preactjs.com).
 
 ## Getting Started
 ### Setup
-Run `npm i` to install dependencies. 
+Run `npm i` or `yarn install` to install dependencies. 
+
+### Develop the Project
+Run `npm run dev` or `yarn dev`. 
+
+Development preview with hotreload:
+http://localhost:8080/popup.html
+http://localhost:8080/options.html
 
 ### Build the Project
-Run `npm run build`. The bundle will end up in `dist/`.
+Run `npm run build` or `yarn build`. The bundle will end up in `dist/`.
 
 ### Get the extension in Chrome for development
 1. Open the Extension Management page by navigating to `chrome://extensions`.
@@ -15,7 +22,9 @@ Run `npm run build`. The bundle will end up in `dist/`.
 3. Click the LOAD UNPACKED button and select the `dist/` directory.
 
 ## Developing
-The base app component is in `src/app/app.jsx`.
+The base app component is in `src/app/popup.jsx`.
+
+The base app component is in `src/app/options.jsx`.
 
 Chrome extensions can be composed of many parts. This scaffolding allows you to build the _popup UI_ with Preact.
 
