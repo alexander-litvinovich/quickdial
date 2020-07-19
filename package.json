@@ -1,39 +1,48 @@
 {
-  "name": "preact-chrome-extension",
-  "version": "1.0.0",
-  "description": "Scaffolding for a Chrome extension built with [Preact](https://preactjs.com).",
-  "main": "index.js",
-  "scripts": {
-    "dev-build": "webpack && npm run copy:dist",
-    "build": "webpack --config prod.config.js && npm run copy:dist",
-    "copy:dist": "cp ./src/popup.html ./src/options.html manifest.json ./dist"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/plugin-transform-react-jsx": "^7.3.0",
-    "@babel/preset-env": "^7.5.5",
-    "babel": "^6.23.0",
-    "babel-loader": "^8.0.6",
-    "css-loader": "^3.2.0",
-    "node-sass": "^4.12.0",
-    "resolve-url-loader": "^3.1.0",
-    "sass-loader": "^8.0.0",
-    "style-loader": "^1.0.0",
-    "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.7"
-  },
-  "dependencies": {
-    "preact": "^10.4.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/drewctate/preact-chrome-extension-starter.git"
-  },
-  "bugs": {
-    "url": "https://github.com/drewctate/preact-chrome-extension-starter/issues"
-  },
-  "homepage": "https://github.com/drewctate/preact-chrome-extension-starter#readme"
+    "name": "quickdial-extension",
+    "version": "0.1",
+    "extensionName": "Quickdial",
+    "description": "Customizable popup panel with links for Chrome",
+    "main": "index.js",
+    "scripts": {
+        "dev": "NODE_ENV=development && webpack-dev-server",
+        "build": "NODE_ENV=production && webpack"
+    },
+    "keywords": [],
+    "author": "Alex Litvinovich",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.5.5",
+        "@babel/plugin-proposal-class-properties": "^7.8.3",
+        "@babel/plugin-transform-react-jsx": "^7.3.0",
+        "@babel/preset-env": "^7.5.5",
+        "babel": "^6.23.0",
+        "babel-loader": "^8.0.6",
+        "clean-webpack-plugin": "^3.0.0",
+        "copy-webpack-plugin": "^5.1.1",
+        "css-loader": "^3.2.0",
+        "dotenv": "^8.2.0",
+        "file-loader": "^6.0.0",
+        "generate-json-webpack-plugin": "^0.3.1",
+        "html-webpack-plugin": "^4.2.1",
+        "prettier": "2.0.5",
+        "resolve-url-loader": "^3.1.0",
+        "style-loader": "^1.0.0",
+        "webpack": "^4.39.3",
+        "webpack-cli": "^3.3.7",
+        "webpack-dev-server": "^3.10.3",
+        "webpack-extension-manifest-plugin": "^0.5.0",
+        "write-file-webpack-plugin": "^4.5.1"
+    },
+    "dependencies": {
+        "preact": "^10.4.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:alexander-litvinovich/chrome-extension-boilerplate-preact.git"
+    },
+    "bugs": {
+        "url": "https://github.com/alexander-litvinovich/chrome-extension-boilerplate-preact"
+    },
+    "homepage": "https://github.com/alexander-litvinovich/chrome-extension-boilerplate-preact"
 }
